@@ -6,7 +6,7 @@ var FILES = __dirname + '/uploads';
 server.use(multer({ dest: FILES }));
 // get list of files
 server.get('/files', function(req, res){
-  fs.readdir(UPLOAD, function(err, files){
+  fs.readdir(FILES, function(err, files){
     if (err) return sendStatus(400);
     res.send(files.filter(function(file){
       return file.indexOf('.') > 0;
