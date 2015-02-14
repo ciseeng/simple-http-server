@@ -1,0 +1,21 @@
+{
+  "name": "simple-http-server",
+  "version": "1.0.0",
+  "description": "ciseeng simple http server for testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "make test"
+  },
+  "keywords": [
+    "simple",
+    "http",
+    "server"
+  ],
+  "author": "Rasa Kismis <kismis@rockybars.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.11.2",
+    "multer": "^0.1.7"
+  }
+}
