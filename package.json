@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "make test"
+    "test": "rm -fr debug && FILES=\"debug\" ./node_modules/mocha/bin/mocha"
   },
   "keywords": [
     "simple",
@@ -17,5 +17,9 @@
   "dependencies": {
     "express": "^4.11.2",
     "multer": "^0.1.7"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
   }
 }
